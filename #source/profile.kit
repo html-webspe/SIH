@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Профиль</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="page-cabinet">
+         <!-- @import "html/header.html" -->
+
+         <section class="s-cabinet">
+            <main class="main-cabinet cabinet">
+               <div class="cabinet-nav">
+                  <ul class="cabinet-nav__list">
+                     <li class="cabinet-nav__item cabinet-nav__item--active ">
+
+                        <a href="profile.html">
+                           <span class="icon-avatar"></span>
+                           Профиль
+                        </a>
+                     </li>
+                     <li class="cabinet-nav__item ">
+
+                        <a href="verification.html"><span class="icon-checked"></span>Верификация</a>
+                     </li>
+                     <li class="cabinet-nav__item ">
+
+                        <a href=""><span class="icon-objects"></span>Объекты</a>
+                     </li>
+                     <li class="cabinet-nav__item ">
+
+                        <a href=""> <span class="icon-cup"></span>Стакан</a>
+                     </li>
+                     <li class="cabinet-nav__item ">
+
+                        <a href=""><span class="icon-documents"></span>Документы</a>
+                     </li>
+                  </ul>
+                  <div class="cabinet-nav__collback">
+                     <p>Есть вопрос?
+                        Задайте его менеджеру
+                        в&nbsp;Whats App или позвоните</p>
+                     <a href="tel:74955555354">7 495 555 53 54</a>
+                  </div>
+               </div>
+               <div class="cabinet-main">
+                  <div class="cabinet-item cabinet-item--active item-profile">
+                     <form action="#" class="item-profile__form form form-1">
+                        <div class="form-row">
+                           <h2 class="cabinet__title">Профиль</h2>
+
+                           <div class="form__inner">
+                              <div class="profile__avatar">
+                                 <div class="profile__avatar-img">
+                                    <img src="img/user-avatar.jpg" alt="user-avatar" />
+                                 </div>
+                                 <div class="profile__upload">
+                                    <label class="form-label file-label">
+                                       <span class="profile__upload-btn icon-upload">Загрузить фото</span>
+                                       <input type="file" name="file[]" multiple>
+                                    </label>
+                                 </div>
+                              </div>
+
+                              <div class="form-block">
+                                 <div class="form-block__inner">
+                                    <div class="form-group">
+                                       <div class="form-group__header">
+                                          <leble class="form-group__leble">Имя</leble>
+                                       </div>
+                                       <div class="form-group__body">
+                                          <input type="text" placeholder="Имя" data-validate-field="name" name="name">
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="form-group__header">
+                                          <leble class="form-group__leble">Номер телефона</leble>
+                                       </div>
+                                       <div class="form-group__body">
+                                          <input type="tel" name="email" data-validate-field="tel"
+                                             placeholder="+7 (8352) 21-71-61" name="phone">
+                                       </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                       <div class="form-group__header">
+                                          <leble class="form-group__leble">Фамилия</leble>
+                                       </div>
+                                       <div class="form-group__body">
+                                          <input type="text" placeholder="Фамилия" data-validate-field="firstName"
+                                             name="firstName">
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="form-group__header">
+                                          <leble class="form-group__leble">Ввести пароль</leble>
+                                       </div>
+                                       <div class="form-group__body">
+                                          <input type="password" name="password" data-validate-field="password"
+                                             placeholder="Ввести пароль">
+                                       </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                       <div class="form-group__header">
+                                          <leble class="form-group__leble">Отчество (при наличии)</leble>
+                                       </div>
+                                       <div class="form-group__body">
+                                          <input type="text" placeholder="Отчество (при наличии)"
+                                             data-validate-field="lastName" name="lastName">
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="form-group__header">
+                                          <leble class="form-group__leble">Ввести пароль еще раз</leble>
+                                       </div>
+                                       <div class="form-group__body">
+                                          <input type="password" name="passwordMore" data-validate-field="passwordMore"
+                                             placeholder="Ввести пароль еще раз">
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <div class="form-group__header">
+                                          <leble class="form-group__leble">E-mail</leble>
+                                       </div>
+                                       <div class="form-group__body">
+                                          <input type="email" name="email" data-validate-field="email"
+                                             placeholder="E-mail">
+                                       </div>
+                                    </div>
+
+                                    <button type="submit" class="form__btn btn icon-arrow">Сохранить изменения</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </main>
+         </section>
+
+
+      </div>
+   </div>
+   <!-- @import "html/iu/js.html" -->
+</body>
+
+</html>

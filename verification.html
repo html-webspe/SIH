@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Верификация</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="page-cabinet">
+         <header id="header" class="header">
+   <div class="header__inner">
+      <div class="header-logo">
+         <a href="/" class="logo">
+            <img src="img/logo.svg" alt="logo" /></a>
+      </div>
+
+      <div id="header-menu__icon" class="header-menu__icon">
+         <span></span>
+      </div>
+      <nav id="header-menu" class="header-menu">
+         <ul class="header-menu__list">
+            <li class="header-menu__item"><a href="" class="header-menu__link">Этапы работ</a></li>
+            <li class="header-menu__item"><a href="" class="header-menu__link">О Компании</a></li>
+            <li class="header-menu__item"><a href="" class="header-menu__link">Как мы выбираем объект</a></li>
+            <li class="header-menu__item"><a href="" class="header-menu__link">FAQ</a></li>
+            <li class="header-menu__item"><a href="" class="header-menu__link">Контакты</a></li>
+         </ul>
+      </nav>
+
+      <div class="header-user user">
+         <span class="user__wallet">0,00 ₽</span>
+
+         <div class="user__avatar">
+            <img src="img/user-avatar.jpg" alt="user-avatar" />
+         </div>
+         <div class="user__info">
+            <p class="user__info-name">Елена Молдованова</p>
+            <p class="user__info-status"><span>Статус:</span> Активен</p>
+         </div>
+      </div>
+   </div>
+</header>
+
+         <section class="s-cabinet">
+            <main class="main-cabinet cabinet">
+               <div class="cabinet-nav">
+                  <ul class="cabinet-nav__list">
+                     <li class="cabinet-nav__item cabinet-nav__item--active">
+                        <a href="profile.html"><span class="icon-avatar"></span>Профиль</a>
+                     </li>
+                     <li class="cabinet-nav__item ">
+                        <a href="verification.html"><span class="icon-checked"></span>Верификация</a>
+                     </li>
+                     <li class="cabinet-nav__item ">
+                        <a href="#"><span class="icon-objects"></span> Объекты</a>
+                     </li>
+                     <li class="cabinet-nav__item ">
+                        <a href="#"><span class="icon-cup"></span> Стакан</a>
+                     </li>
+                     <li class="cabinet-nav__item ">
+                        <a href="#"><span class="icon-documents"></span> Документы</a>
+                     </li>
+                  </ul>
+                  <div class="cabinet-nav__collback">
+                     <p>Есть вопрос?
+                        Задайте его менеджеру
+                        в&nbsp;Whats App или позвоните</p>
+                     <a href="tel:74955555354">7 495 555 53 54</a>
+                  </div>
+               </div>
+               <div class="cabinet-main">
+                  <div class="cabinet-item item-verification">
+                     <form action="#" class="item-verification__form form-2 form">
+                        <div class="form-row">
+                           <div class="form-block">
+                              <h2 class="cabinet__title">Верификация</h2>
+                              <div class="form-block__inner">
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Имя</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" placeholder="Имя" data-validate-field="name" name="name">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Гражданство</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" placeholder="Гражданство (выбрать страну)"
+                                          data-validate-field="citizenship" name="citizenship">
+                                    </div>
+                                 </div>
+
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Фамилия</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" placeholder="Фамилия" data-validate-field="firstName"
+                                          name="firstName">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Серия и номер паспорта</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" name="passport" data-validate-field="passport"
+                                          placeholder="Серия и номер паспорта">
+                                    </div>
+                                 </div>
+
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Отчество (при наличии)</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" placeholder="Отчество (при наличии)"
+                                          data-validate-field="lastName" name="lastName">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Идентификационный код</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" name="codeInn" data-validate-field="codeInn"
+                                          placeholder="ИНН">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Номер телефона</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="tel" name="email" data-validate-field="tel"
+                                          placeholder="+7 (8352) 21-71-61" name="phone">
+                                    </div>
+                                 </div>
+
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Страховой номер индивидуального лицевого счета
+                                       </leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" name="snils" data-validate-field="snils" placeholder="Снилс">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form-checkbox">
+                           <label>
+                              <input class="form-checkbox__input" type="checkbox">
+
+                              <span class="form-checkbox__icon icon-arrow-check"></span>
+                              <p class="form-checkbox__text ">Хочу инвестировать как индивидуальный
+                                 предприниматель.
+                                 Индивидуальные
+                                 предприниматели могут инвестировать без ограничений</p>
+                           </label>
+
+                        </div>
+
+                        <div class="form-row">
+                           <div class="form-block">
+                              <h2 class="cabinet__title">Паспорт</h2>
+
+                              <span class="cabinet__subtitle icon-alert">Загрузите сканы или фотографии двух разворотов
+                                 паспорта: с
+                                 фотографией, ФИО и с
+                                 действующей пропиской</span>
+                              <div class="form-block__inner">
+                                 <div class="form-upload__img">
+                                    <label class="form-label file-label">
+                                       <span class="icon-plus"></span>
+                                       <input type="file" name="file[]" onchange="donwload(this)" multiple>
+                                    </label>
+                                 </div>
+                                 <div class="form-upload__img1">
+                                    <label class="form-label file-label">
+                                       <span class="icon-plus"></span>
+                                       <input type="file" name="file[]" onchange="donwload1(this)" multiple>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <script>
+                              let wrapper = document.querySelector('.form-upload__img');
+                              let wrapper1 = document.querySelector('.form-upload__img1');
+
+                              function donwload(input) {
+                                 let file = input.files[0];
+                                 let reader = new FileReader();
+                                 reader.readAsDataURL(file);
+
+                                 reader.onload = function () {
+                                    let img = document.createElement('img');
+                                    wrapper.appendChild(img);
+                                    img.src = reader.result;
+                                 }
+                              }
+
+                              function donwload1(input) {
+                                 let file = input.files[0];
+                                 let reader = new FileReader();
+                                 reader.readAsDataURL(file);
+
+                                 reader.onload = function () {
+                                    let img = document.createElement('img');
+                                    wrapper1.appendChild(img);
+                                    img.src = reader.result;
+                                 }
+                              }
+
+                           </script>
+                        </div>
+                        <div class="form-row pt0">
+                           <div class="form-block">
+                              <h2 class="cabinet__title">Банковские реквизиты</h2>
+                              <div class="form-block__inner">
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Номер счёта</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" name="check" data-validate-field="check"
+                                          placeholder="Номер счёта">
+                                    </div>
+                                 </div>
+                                 <div class="form-group">
+                                    <div class="form-group__header">
+                                       <leble class="form-group__leble">Банковский идентификационный код</leble>
+                                    </div>
+                                    <div class="form-group__body">
+                                       <input type="text" name="bankCode" data-validate-field="bankCode"
+                                          placeholder="БИК">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <button type="submit" class="form__btn btn icon-arrow">Пройти верификацию</button>
+                     </form>
+                  </div>
+               </div>
+            </main>
+         </section>
+
+
+      </div>
+   </div>
+   <script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
