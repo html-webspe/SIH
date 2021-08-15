@@ -148,6 +148,8 @@
    &__input {
       position: absolute;
       appearance: none;
+      visibility: hidden;
+      opacity: 0;
 
       &:checked {
          &+.form-checkbox__icon {
