@@ -186,6 +186,10 @@
       @media (min-width:1700px) {
          margin-right: 45px;
       }
+
+      @media (max-width:$md4+px) {
+         text-align: center;
+      }
    }
 
    &__link {
