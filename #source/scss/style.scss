@@ -131,105 +131,6 @@ body {
   }
 }
 
-.cabinet-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 82px 0 50px 0;
-  background-color: $colorNavCabimet;
-
-
-
-  @media (max-width:1500px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (max-width:$md3+px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @media (min-width:1500px) {
-    flex: 0 0 280px;
-    width: 280px;
-  }
-
-  &__list {
-    flex-grow: 1;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-
-
-
-    &:not(:last-child) {
-      margin-bottom: 34px;
-    }
-
-    &:before {}
-
-    a {
-      letter-spacing: .24px;
-      outline: none;
-
-      &:hover {
-        font-weight: 600;
-        letter-spacing: -.018px;
-      }
-
-      @media (max-width:$md2+px) {
-        font-size: 0;
-      }
-
-
-    }
-
-    span {
-      color: $acentColor;
-      font-size: 18px;
-
-      @media (min-width:$md2+px) {
-        margin-right: 15px;
-      }
-    }
-  }
-
-
-  &__item--active {
-
-    font-weight: 600;
-    letter-spacing: -.04px;
-
-    span {
-      &:before {
-        font-weight: 600;
-      }
-    }
-
-  }
-
-  &__collback {
-    max-width: 144px;
-
-    @media (max-width:$md2+px) {
-      display: none;
-    }
-
-    p {
-      font-size: 16px;
-      color: #838383;
-      margin-bottom: 16px;
-    }
-
-    a {
-      font-weight: 500;
-      color: $acentColor;
-    }
-  }
-}
 
 .cabinet-main {
   width: 100%;
@@ -253,117 +154,23 @@ body {
   }
 }
 
-.item-profile {
-  background-image: url(../img/cabinet-bg/bg-1.png);
-
-  .cabinet__title {
-    margin-bottom: 28px;
-  }
-
-  .form {
-    &__inner {
-      display: flex;
-
-      @media (max-width:1200px) {
-        flex-direction: column;
-      }
-    }
-  }
-}
-
-.item-verification {
-  background-image: url(../img/cabinet-bg/bg-2.png);
 
 
-  @media (min-width:$md3+px) {
-    padding: 87px 0;
-  }
-
-  .cabinet__title {
-    padding-left: 0;
-  }
-
-  .form__btn {
-    margin: 0 auto;
-  }
-}
 
 
-.profile {
-  &__avatar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
 
-    @media (max-width:1600px) {
-      margin-right: 40px;
-    }
-
-    @media (min-width:1600px) {
-      margin-right: 70px;
-    }
-  }
-
-  &__avatar-img {
-    border-radius: 50%;
-    padding-top: 18px;
-
-    @media (max-width:1400px) {
-      width: 208px;
-    }
-
-    @media (max-width:1200px) {
-      margin-bottom: 16px;
-      padding-top: 0;
-    }
-
-    @media (max-width:$md2+px) {
-      width: 120px;
-    }
-
-    @media (min-width:1400px) {
-      width: 288px;
-    }
-
-    img {
-      border-radius: inherit;
-    }
-  }
-
-  &__upload {
-    @media (max-width:1200px) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &__upload-btn {
-    font-size: 20px;
-    line-height: 24px;
-    cursor: pointer;
-
-    &:before {
-      margin-right: 15px;
-      color: $acentColor;
-      font-size: 30px;
-    }
-
-    @media (max-width:1200px) {
-
-      font-size: 14px;
-
-      &:before {
-        font-size: 18px;
-      }
-    }
-  }
-}
 
 
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "ui/_btn";
 @import "blocks/_form";
+@import "blocks/_profil";
+@import "blocks/_cabinet-nav";
+@import "blocks/_verification";
+@import "blocks/_cup";
+
 
 @import "blocks/_header";

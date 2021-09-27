@@ -72,6 +72,18 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-triangle:before {
+   content: "\e90d";
+}
+
+.icon-phone:before {
+   content: "\e90b";
+}
+
+.icon-auth-btn:before {
+   content: "\e90c";
+}
+
 .icon-location:before {
    content: "\e900";
 }

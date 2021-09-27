@@ -1,0 +1,16 @@
+.item-verification {
+   background-image: url(../img/cabinet-bg/bg-2.png);
+
+
+   @media (min-width:$md3+px) {
+      padding: 87px 0;
+   }
+
+   .cabinet__title {
+      padding-left: 0;
+   }
+
+   .form__btn {
+      margin: 0 auto;
+   }
+}
