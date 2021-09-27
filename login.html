@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Войти</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="page-login">
+         <header id="header" class="header">
+   <div class="header__inner">
+      <div class="header-logo">
+         <a href="/" class="logo">
+            <img src="img/logo.svg" alt="logo" /></a>
+      </div>
+
+      <div id="header-menu__icon" class="header-menu__icon">
+         <span></span>
+      </div>
+      <nav id="header-menu" class="header-menu">
+         <ul class="header-menu__list">
+            <li class="header-menu__item"><a href="" class="header-menu__link">Этапы работ</a></li>
+            <li class="header-menu__item"><a href="" class="header-menu__link">О Компании</a></li>
+            <li class="header-menu__item"><a href="" class="header-menu__link">Как мы выбираем объект</a></li>
+            <li class="header-menu__item"><a href="" class="header-menu__link">FAQ</a></li>
+            <li class="header-menu__item"><a href="" class="header-menu__link">Контакты</a></li>
+         </ul>
+      </nav>
+
+      <div class="header-user">
+         <a href="login.html" class="auth-btn icon-auth-btn icon-phone">ВОЙТИ</a>
+      </div>
+
+      <div class="header-contacts contacts-header">
+         <a href="tel:+79999999999" class="contacts-header__tel" data-da="header-menu,3,1800">+7 999
+            999-99-99</a>
+
+         <a href="#" class="contacts-header__callback icon-phone"></a>
+
+         <span>заказать звонок</span>
+      </div>
+   </div>
+</header>
+
+         <div class="auth-block">
+            <div class="auth-col">
+               <img src="img/login-bg.jpg" alt="login-bg" />
+            </div>
+            <div class="auth-col auth-col__form">
+               <div class="auth__content">
+                  <h1 class="auth__title">ВХОД</h1>
+                  <p class="auth__text">Введите номер телефона или электронную почту,
+                     которые вы указывали при регистрации</p>
+
+                  <form action="#" class="auth__form form">
+                     <div class="form-group">
+                        <div class="form-group__header">
+                           <leble class="form-group__leble">E-mail или номер телефона</leble>
+                        </div>
+                        <div class="form-group__body">
+                           <input type="text" placeholder="E-mail или номер телефона" data-validate-field="name"
+                              name="name">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="form-group__header">
+                           <leble class="form-group__leble">Пароль</leble>
+                        </div>
+                        <div class="form-group__body">
+                           <input type="password" data-validate-field="tel" placeholder="Введите пароль"
+                              name="password">
+                        </div>
+                     </div>
+                     <div class="auth__lose"><a href="#">Забыли пароль?</a></div>
+                     <button type="submit" class="form__btn btn icon-arrow">ВОЙТИ</button>
+                  </form>
+
+                  <p class="login-or-register">Нет аккаунта? <a href="register.html">Регистрация</a> </p>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+   <script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

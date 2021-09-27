@@ -54,7 +54,13 @@
    font-display: block;
 }
 
-
+@font-face {
+   font-family: 'Phenomena';
+   src: local('../fonts/Phenomena Bold'),
+      local('../fonts/Phenomena-Bold'), url('../fonts/Phenomena-Bold.woff2') format('woff2'), url('../fonts/Phenomena-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {

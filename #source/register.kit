@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Зарегистрироваться</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="page-register">
+         <!-- @import "html/header-login.html" -->
+
+         <div class="auth-block">
+            <div class="auth-col">
+               <img src="img/register-bg.jpg" alt="login-bg" />
+            </div>
+            <div class="auth-col auth-col__form">
+               <div class="auth__content">
+                  <h1 class="auth__title">Регистрация</h1>
+                  <p class="auth__text">Начните с создания учетной записи</p>
+
+                  <form action="#" class="auth__form form">
+                     <div class="form-group">
+                        <div class="form-group__header">
+                           <leble class="form-group__leble">Введите ваше имя</leble>
+                        </div>
+                        <div class="form-group__body">
+                           <input type="text" placeholder="Введите ваше имя" data-validate-field="name" name="name">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="form-group__header">
+                           <leble class="form-group__leble">Эл. почта*</leble>
+                        </div>
+                        <div class="form-group__body">
+                           <input type="email" data-validate-field="tel" placeholder="Введите адрес эл. почты"
+                              name="email">
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="form-group__header">
+                           <leble class="form-group__leble">Номер телефона (на этот номер прийдет СМС с кодом)*</leble>
+                        </div>
+                        <div class="form-group__body">
+                           <input type="tel" data-validate-field="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" name="tel">
+                        </div>
+                     </div>
+                     <button type="submit" class="form__btn btn icon-arrow">Зарегистрироваться</button>
+                  </form>
+                  <p class="auth__text fz16">Нажимая кнопку «Зарегистрироваться», Вы принимаете условия
+                     <a href="#">Пользовательского соглашения.</a>
+                  </p>
+                  <p class="login-or-register">Уже зарегистрированы? <a href="login.html">Войти тут</a> </p>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+   <!-- @import "html/iu/js.html" -->
+</body>
+
+</html>

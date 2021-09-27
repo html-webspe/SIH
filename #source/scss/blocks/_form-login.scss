@@ -1,0 +1,114 @@
+.page-login,
+.page-register {
+   .form {
+      @media (min-width:$md4+px) {
+         padding: 0 70px;
+      }
+
+      &__btn {
+         width: 100%;
+         background-color: $acentColor;
+         color: #fff;
+         font-size: 18px;
+         line-height: 22px;
+         text-transform: uppercase;
+         margin-bottom: 57px;
+         z-index: 1;
+         @include anim(0.3s, 0s);
+
+         @media (max-width:$md4+px) {
+            margin-bottom: 45px;
+            padding: 20px 0;
+         }
+
+         &:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $acentColor;
+            @include anim(0.3s, 0s);
+            opacity: 0;
+            z-index: -1;
+         }
+
+         &:hover {
+            &:after {
+               opacity: 1;
+            }
+
+         }
+
+         &:active {
+            transform: scale(0.9);
+         }
+      }
+   }
+
+   .form-group {
+      margin-bottom: 25px;
+      text-align: left;
+
+      @media (max-width:$md4+px) {
+         margin-bottom: 14px;
+      }
+
+      @media (max-width:1200px) {
+         margin-bottom: 18px;
+      }
+
+      &__header {
+         @media (max-width:1200px) {
+            margin-bottom: 16px;
+         }
+
+         @media (min-width:1200px) {
+            margin-bottom: 24px;
+         }
+      }
+
+      &__leble {
+         font-size: 16px;
+         line-height: 20px;
+         color: #C4C4C4;
+
+         @media (max-width:1200px) {
+            font-size: 12px;
+            line-height: 14px;
+         }
+
+      }
+
+      &__body {
+         input {
+            width: 100%;
+            padding-bottom: 12px;
+            border: none;
+            border-bottom: 1px solid #C4C4C4;
+            outline: none;
+            color: #000;
+            font-family: $fontfamily;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+
+            @media (max-width:1200px) {
+               font-size: 14px;
+               line-height: 18px;
+            }
+         }
+      }
+   }
+
+}
+
+.js-validate-error-label {
+   display: none;
+}
+
+.js-validate-error-field {
+   border: none !important;
+   border-bottom: 1px solid red !important;
+}

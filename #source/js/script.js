@@ -15,3 +15,16 @@ const showMenu = (toggleId, navId) => {
 showMenu('header-menu__icon', 'header-menu')
 
 
+const windowInnerHeight = window.innerHeight;
+const authColForm = document.querySelector('.auth-col__form');
+const authBlock = document.querySelector('.auth-block');
+const аа = window.screen.availHeight;
+
+
+if (windowInnerHeight < 1084) {
+   authBlock.style.minHeight = (аа - 249) + 'px';
+   authColForm.style.paddingTop = "30px";
+   authColForm.style.paddingBottom = "30px";
+} else {
+   authBlock.style.minHeight = '916px'
+}

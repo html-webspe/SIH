@@ -155,22 +155,19 @@ body {
 }
 
 
-
-
-
-
-
-
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 @import "ui/_btn";
 @import "blocks/_form";
+@import "blocks/_form-login";
+
 @import "blocks/_profil";
 @import "blocks/_cabinet-nav";
 @import "blocks/_verification";
 @import "blocks/_cup";
 
-
 @import "blocks/_header";
+@import "blocks/_header-login";
+@import "blocks/_login";
